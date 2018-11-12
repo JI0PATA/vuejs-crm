@@ -1,0 +1,63 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "admin",
+      "last_name": "admin",
+      "gender": 1,
+      "username": "admin",
+      "email": "admin@test.ru",
+      "password": "admin",
+      "user_create": 1,
+      "accesses": [
+        "create-users",
+        "edit-accesses",
+        "create-projects"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "user_create": 1,
+      "user_compiled": null,
+      "title": "test",
+      "description": "Описание",
+      "users": {
+        "manager": [
+          1
+        ],
+        "working": [
+          1
+        ]
+      },
+      "tasks": [
+        {
+          "id": 1,
+          "user_create": 1,
+          "user_compiled": null,
+          "title": "Task 1",
+          "description": "Description task 1",
+          "checklist": [
+            {
+              "id": 1,
+              "title": "test",
+              "checked": false,
+              "user_compiled": 1
+            }
+          ],
+          "files": [
+            {
+              "id": 1,
+              "file": "file",
+              "base64": ""
+            }
+          ],
+          "users": [
+            1
+          ]
+        }
+      ]
+    }
+  ]
+}
